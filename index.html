@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Calvert">
+  <title>Google Maps APIs Tool</title>
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/solarized_dark.css" rel="stylesheet">
+  <link href="assets/css/gh-fork-ribbon.css" rel="stylesheet">
+  <link href="assets/css/app.css" rel="stylesheet">
+</head>
+<body>
+  <div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/CalvertYang/google-maps-easy-marker">Fork me on GitHub</a>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="javascript:;">Google Maps Easy Marker</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="https://github.com/CalvertYang/" target="_blank">by @CalvertYang</a></li>
+          <li><a href="http://calvert.mit-license.org" target="_blank">License</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="google-maps-easy-marker"></div>
+
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/beautify.js"></script>
+  <script src="assets/js/beautify-html.js"></script>
+  <script src="assets/js/highlight.pack.js"></script>
+  <script src="assets/js/react-with-addons.min.js"></script>
+  <script src="assets/js/components/Highlight.js"></script>
+  <script src="assets/js/components/GoogleMaps.js"></script>
+  <script src="assets/js/components/GoogleMapsEasyMarker.js"></script>
+  <script>
+    React.render(
+      React.createElement(GoogleMapsEasyMarker, {height: "100vh - 51px"}),
+      document.getElementById('google-maps-easy-marker')
+    );
+    $('[data-toggle="tooltip"]').tooltip();
+  </script>
+</body>
+</html>

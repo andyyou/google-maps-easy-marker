@@ -1,0 +1,68 @@
+/* override bootstrap style */
+.navbar {
+  margin: 0;
+  min-height: 0;
+}
+
+.form-horizontal .form-group, .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* flip effect */
+/*.flip-container {
+  perspective: 1000;
+}*/
+
+/*.flip-container.flipped .flipper  {
+  transform: rotateY(180deg);
+}*/
+
+/*.flip-container, .front, .back {
+  width: 100%;
+  height: calc(100vh - 50px);
+}*/
+
+/*.flip-container .front, .flip-container .back {
+  padding: 20px;
+}*/
+
+/* flip speed goes here */
+/*.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+
+  position: relative;
+}*/
+
+/* hide back of pane during swap */
+/*.front, .back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
+
+/* front pane, placed above back */
+/*.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+}*/
+
+/* back, initially hidden pane */
+/*.back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+}*/
